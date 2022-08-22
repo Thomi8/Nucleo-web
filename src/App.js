@@ -5,7 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 function App() {
   return (
     <>
-    <ItemListContainer />
+    <ItemListContainer titulo="NÚCLEO" />
     <NavBar />
     </>
   );

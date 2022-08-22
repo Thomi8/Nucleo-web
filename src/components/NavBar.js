@@ -20,7 +20,6 @@ const NavBar = () => {
             </div>
             <CardWidget />
         </div>
-        
     )
 }
 export default NavBar;
