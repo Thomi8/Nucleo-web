@@ -371,6 +371,7 @@ img {
 .main-header__container{
   flex-wrap: wrap;
   align-content: flex-start;
+  
 }
 .main-header__txt{
   width: 90%;
@@ -399,7 +400,8 @@ img {
   margin-bottom: 20px;
 }
 .main-header__input{
-  width: 85%;
+  width: 15%;
+  margin-left: 50%;
 }
 .main-nav{
   visibility: visible;
@@ -542,4 +544,25 @@ img.btn-whatsapp:hover {
   -moz-box-shadow: 0px 0px 15px 0px #075e54;
   box-shadow: 0px 0px 15px 0px #075e54;
   transition-duration: 1s; 
+}
+
+.count {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 60px;
+	margin: 10px;
+	color: #FF4E00;
+	background-color: black;
+	border-radius: 4px;
+}
+
+.count button{
+	margin: 5px;
+  color: #FF4E00;
+  border: black;
+  border-radius: 2px;
+  font-family: "inconsolata", monospace;
+  cursor: pointer;
 }

@@ -14,12 +14,9 @@ const NavBar = () => {
                     </ul>
                 </nav>
             </div>
-            <div class="main-header__container">
-                <span class="main-header__txt">Necesitas ayuda?</span>
-                <p class="main-header__txt"><i class="fas fa-phone"></i> Comunicate al (+54 9)223-544-74-57</p>
-            </div>
             <CardWidget />
         </div>
     )
 }
+
 export default NavBar;
