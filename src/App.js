@@ -1,13 +1,13 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
-    <>
-    <ItemListContainer titulo="NÚCLEO" />
-    <NavBar />
-    </>
+    <div className="App">
+      <NavBar />
+      <ItemListContainer greetings="¡Encontrá aquí los mejores lentes!" />
+    </div>
   );
 }
 
