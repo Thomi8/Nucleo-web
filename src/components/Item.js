@@ -1,9 +1,8 @@
-import React from "react";
 import ItemCount from "./ItemCount";
 
 export default function Item(props) {
     return (
-        <div className="flex flex-col">
+    <div className="flex flex-col">
         <div className="group relative">
             <div
             className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
@@ -29,6 +28,6 @@ export default function Item(props) {
         <div className="flex flex-col items-center mt-3">
             <ItemCount stock={props.stock} min={props.min}/>
         </div>
-        </div>
-    );
-    }
+    </div>
+);
+}
