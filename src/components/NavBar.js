@@ -17,13 +17,7 @@ const NavBar = () => {
                 </div>
                 <CardWidget />
             </div>
-<<<<<<< HEAD
         </>
-        
-=======
-            <CardWidget />
-        </div>
->>>>>>> ffe8f76d390b0e5ec9121da8f6ab061ee30756fc
     )
 }
 
