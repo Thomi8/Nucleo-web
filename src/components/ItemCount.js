@@ -38,6 +38,6 @@ return (
         Agregar al carrito
     </button>
 </div>
-    );
+);
 }
 

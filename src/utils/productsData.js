@@ -1,7 +1,7 @@
 export const productsData = [
     {
         id: 1,
-        name: 'Farenheit (Gris)',
+        name: 'Farenh (Gris)',
         href: '#',
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
         imageSrc: '/img/anteojos.jpg',
@@ -10,7 +10,7 @@ export const productsData = [
         brand: 'Gucci',
         min: 1,
         stock: 5,
-        category: "lentes"
+        categoryId: "Hombre"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const productsData = [
         brand: 'Louis Vuitton',
         min: 1,
         stock: 3,
-        category: "lentes"
+        categoryId: "Mujer"
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export const productsData = [
         brand: 'Bluth',
         min: 1,
         stock: 7,
-        category: "lentes"
+        categoryId: "Hombre"
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ export const productsData = [
         brand: 'Vision',
         min: 1,
         stock: 9,
-        category: "lentes"
+        categoryId: "Hombre"
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ export const productsData = [
         brand: 'Dior',
         min: 1,
         stock: 3,
-        category: "lentes"
+        categoryId: "Hombre"
         },
     {
         id: 6,
@@ -75,7 +75,7 @@ export const productsData = [
         brand: 'RayBan',
         min: 1,
         stock: 9,
-        category: "lentes"
+        categoryId: "Hombre"
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ export const productsData = [
         brand: 'XL',
         min: 1,
         stock: 7,
-        category: "lentes"
+        categoryId: "Mujer"
     },
     {
         id: 8,
@@ -101,7 +101,7 @@ export const productsData = [
         brand: 'Kevingston',
         min: 1,
         stock: 5,
-        category: "lentes"
+        categoryId: "Hombre"
     },
     {
         id: 9,
@@ -114,7 +114,7 @@ export const productsData = [
         brand: 'XL',
         min: 1,
         stock: 5,
-        category: "lentes"
+        categoryId: "Mujer"
     },
     {
         id: 10,
@@ -127,7 +127,7 @@ export const productsData = [
         brand: 'RayBan',
         min: 1,
         stock: 3,
-        category: "lentes"
+        categoryId: "Hombre"
     },
     {
         id: 11,
@@ -140,7 +140,7 @@ export const productsData = [
         brand: 'XL',
         min: 1,
         stock: 9,
-        category: "lentes"
+        categoryId: "Mujer"
     },
     {
         id: 12,
@@ -153,6 +153,6 @@ export const productsData = [
         brand: 'Kevingston',
         min: 1,
         stock: 7,
-        category: "lentes"
+        categoryId: "Hombre"
     },
 ]

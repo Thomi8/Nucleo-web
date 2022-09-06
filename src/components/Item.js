@@ -1,4 +1,5 @@
 import ItemCount from "./ItemCount";
+import {Link} from 'react-router-dom'
 
 export default function Item(props) {
     return (
@@ -22,12 +23,14 @@ export default function Item(props) {
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">{props.brand}</p>
             </div>
+            
             <p className="text-sm font-medium text-gray-900">{props.price}</p>
             </div>
         </div>
         <div className="flex flex-col items-center mt-3">
             <ItemCount stock={props.stock} min={props.min}/>
         </div>
+        <Link to={`/item/${props.id}`}>Ver detalles</Link>
     </div>
 );
 }

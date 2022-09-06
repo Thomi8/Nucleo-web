@@ -1,17 +1,20 @@
 import CardWidget from "./CartWidget";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <> 
             <div>
-                <div class="main-header__container">
+                <div className="main-header__container">
                 <h1 className="main-header__title">NÚCLEO</h1>
-                    <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
-                    <nav class="main-nav" id="main-nav">
-                        <ul class="menu">
-                            <li class="menu__item"><a href="index.html" class="menu__link">HOME</a></li>
-                            <li class="menu__item"><a href="./html/mercado.html" class="menu__link">MERCADO</a></li>
-                            <li class="menu__item"><a href="./html/contacto.html" class="menu__link">CONTACTO</a></li>
+                    <span className="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+                    <nav className="main-nav" id="main-nav">
+                        <ul className="menu">
+                        <li className="menu__item">
+                            <Link to='/'><p className="menu__link">HOME</p></Link>
+                            <Link to='category/Hombre'><p className="menu__link">HOMBRE</p></Link>
+                            <Link to='category/Mujer'><p className="menu__link">MUJER</p></Link>
+                        </li> 
                         </ul>
                     </nav>
                 </div>
@@ -22,3 +25,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
+

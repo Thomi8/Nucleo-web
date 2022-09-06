@@ -273,6 +273,8 @@ img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
+        background-color: black;
+        color: rgb(224, 210, 210);
     }
     .copy {
         grid-column-start: span 4;

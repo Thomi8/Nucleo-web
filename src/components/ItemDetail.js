@@ -1,4 +1,3 @@
-import React, {useState} from 'react'
 import ItemCountDetail from "./ItemCountDetail";
 
 export default function ItemDetail(props) {
