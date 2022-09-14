@@ -1,4 +1,5 @@
 import ItemCountDetail from "./ItemCountDetail";
+import React from "react";
 
 export default function ItemDetail(props) {
     return (
@@ -30,7 +31,7 @@ export default function ItemDetail(props) {
                             <h2 className="sr-only">Info del producto</h2>
                             <p className="text-3xl tracking-tight text-gray-900">{props.item.price}</p>
                             <div className="flex flex-col items-center mt-6 mb-0">
-                                <ItemCountDetail stock={props.item.stock} min={props.item.min} />
+                                <ItemCountDetail item={props.item} />
                             </div>
                         </div>
                     </div>

@@ -1,38 +1,43 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
+import CartContext from "./CartContext";
 
-export default function ItemCountDetail(props) {
-    const [countDetail, setCountDetail] = useState(1);
-    const [compra, setCompra] = useState(false);
+export default function ItemCountDetail({item}) {
 
-    useEffect(() => {
-        setCountDetail(props.min)
-    }, [props.min])
+const [countDetail, setCountDetail] = useState(1);
+const [compra, setCompra] = useState(false)
+const cartContext = useContext(CartContext)
 
-    function decrement() {
-        if (countDetail !== props.min) {
-            setCountDetail(countDetail - 1)
-        } else {
-            swal(`¡No puedes agregar menos de ${props.min} unidad!`);
-        }
+useEffect(() => {
+    setCountDetail(item.min)
+    }, [item.min])
+
+function decrement() {
+    if (countDetail !== item.min) {
+        setCountDetail(countDetail - 1)
+    } else {
+        swal(`¡No puedes agregar menos de ${item.min} unidad!`);
     }
+}
 
-    function increment() {
-        if (countDetail !== props.stock) {
-            setCountDetail(countDetail + 1)
-        } else {
-            swal(`No puedes agregar más de ${props.stock} unidades`);
-        }
+function increment() {
+    if (countDetail !== item.stock) {
+        setCountDetail(countDetail + 1)
+    } else {
+        swal(`¡No puedes agregar más de ${item.stock} unidades!`);
     }
+}
 
-    function addToCart() {
-        swal(`Se agregaron ${countDetail} unidades al carrito`);
-        setCompra(true);
-    }
+function addToCart() {
+    swal(`¡Se agregaron al carrito ${countDetail} unidades!`);
+    item.quantity = countDetail
+    cartContext.addItem(item);
+    setCompra(true);
+}
 
     return (
-        compra == false ?
+        compra === false ?
             <div className="flex items-center gap-8 w-full">
                 <div
                     className="flex justify-between items-center px-4 py-1 border-indigo-600 border-2 rounded-md w-1/3 hover:bg-gray-50">
